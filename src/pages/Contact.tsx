@@ -71,66 +71,7 @@ const ContactPage = () => {
           </div>
         </section>
 
-        {/* Form + Quote */}
-        <section className="py-20 lg:py-28 bg-background">
-          <div className="container mx-auto px-4 lg:px-8">
-            <div className="grid lg:grid-cols-5 gap-12 max-w-6xl mx-auto">
-              {/* Form */}
-              <div className="lg:col-span-3 animate-fade-in">
-                <div className="flex items-center gap-2 mb-6">
-                  <MessageSquare size={20} className="text-accent" />
-                  <h2 className="text-2xl font-display font-bold text-foreground">Send Us a Message</h2>
-                </div>
-                <form onSubmit={handleSubmit} className="space-y-5 bg-card border border-border rounded-2xl p-6 lg:p-8 shadow-sm">
-                  <div className="grid sm:grid-cols-2 gap-5">
-                    <div className="space-y-2">
-                      <Label htmlFor="name">Full Name</Label>
-                      <Input id="name" placeholder="Your name" value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} required />
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="phone">Phone Number</Label>
-                      <Input id="phone" type="tel" placeholder="+91 XXXXX XXXXX" value={form.phone} onChange={(e) => setForm({ ...form, phone: e.target.value })} required />
-                    </div>
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="email">Email Address</Label>
-                    <Input id="email" type="email" placeholder="you@example.com" value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} required />
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="message">Message</Label>
-                    <Textarea id="message" placeholder="Tell us about your insurance needs..." rows={5} value={form.message} onChange={(e) => setForm({ ...form, message: e.target.value })} required />
-                  </div>
-                  <Button type="submit" size="lg" className="w-full sm:w-auto bg-accent text-accent-foreground hover:bg-emerald-dark font-semibold text-base px-10">
-                    <Send size={16} className="mr-2" /> Send Message
-                  </Button>
-                </form>
-              </div>
-
-              {/* Sidebar */}
-              <div className="lg:col-span-2 space-y-8 animate-fade-in" style={{ animationDelay: "200ms", animationFillMode: "both" }}>
-                {/* Quote */}
-                <div className="bg-primary text-primary-foreground rounded-2xl p-6 lg:p-8">
-                  <p className="text-lg italic leading-relaxed mb-4 text-primary-foreground/80">
-                    "Insure & Be Secure" is not just a slogan — it is a commitment delivered through integrity,
-                    responsibility, and personalized care.
-                  </p>
-                  <div className="border-t border-primary-foreground/10 pt-4">
-                    <p className="font-semibold">Satish Kumar Erra</p>
-                    <p className="text-sm text-primary-foreground/50">Founder, SJ Health Solutions</p>
-                  </div>
-                </div>
-
-                {/* Map placeholder */}
-                <div className="bg-muted rounded-2xl p-6 text-center">
-                  <MapPin size={32} className="text-accent mx-auto mb-3" />
-                  <h3 className="font-sans font-semibold text-foreground mb-1">Our Location</h3>
-                  <p className="text-sm text-muted-foreground">Hyderabad, Telangana, India</p>
-                  <p className="text-xs text-muted-foreground mt-1">Serving clients across India</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+    
 
         {/* FAQs */}
         <section className="py-20 lg:py-28 bg-muted/50">

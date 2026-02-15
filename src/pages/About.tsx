@@ -1,7 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Heart, Eye, LifeBuoy, Users, CheckCircle, Award, Briefcase } from "lucide-react";
-import advisorImg from "@/assets/advisor-portrait.jpg";
+import advisorImg from "@/assets/satish-high.png";
 
 const values = [
   { icon: Heart, title: "Honest Advice", description: "Straightforward, unbiased recommendations tailored to your unique needs—never a hard sell." },
