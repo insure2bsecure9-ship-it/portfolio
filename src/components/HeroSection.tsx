@@ -47,7 +47,7 @@ const HeroSection = () => {
                 </Button>
               </Link>
               <a 
-                href="https://wa.me/919876543210" 
+                href="https://wa.me/919032412833" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >
@@ -141,7 +141,7 @@ const HeroSection = () => {
               {/* WhatsApp Contact Button */}
               <div className="pt-2">
                 <a 
-                  href="https://wa.me/919876543210" 
+                  href="https://wa.me/919032412833" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-3 rounded-full shadow-lg transition-all hover:scale-105"
